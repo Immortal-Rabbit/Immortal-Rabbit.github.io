@@ -1,8 +1,9 @@
 body {
   background-color: black;
   width: screen-width;
-  color: green;
+  color: white;
   font-family: verdana;
+  text-align: center;
 }
 .active{
   color: white;
@@ -13,4 +14,8 @@ a:hover{
 @keyframes animation1{
   0%{}
   100%{}
+}
+a{
+  text-decoration: none;
+  color: white;
 }
