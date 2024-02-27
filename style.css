@@ -7,3 +7,10 @@ body {
 .active{
   color: white;
 }
+a:hover{
+  animation: animation1 3s;
+}
+@keyframes animation1{
+  0%{}
+  100%{}
+}
