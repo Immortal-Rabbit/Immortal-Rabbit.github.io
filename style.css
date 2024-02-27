@@ -1,1 +1,9 @@
-
+body {
+  background-color: black;
+  width: screen-width;
+  color: green;
+  font-family: verdana;
+}
+.active{
+  color: white;
+}
