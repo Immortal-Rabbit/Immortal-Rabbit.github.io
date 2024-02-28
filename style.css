@@ -8,7 +8,7 @@ body {
 .active{
   color: white;
 }
-a:hover{
+.headerlink:hover{
   animation: animation1 2s;
 }
 @keyframes animation1{
@@ -19,10 +19,11 @@ a:hover{
     color: green;
   }
 }
-a{
+.headerlink{
   text-decoration: none;
   color: white;
 }
 link1{
   color: green;
+  text-decoration: none;
 }
