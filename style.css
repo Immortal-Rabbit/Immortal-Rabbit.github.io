@@ -12,9 +12,12 @@ a:hover{
   animation: animation1 6s;
 }
 @keyframes animation1{
-  0%{color: white;}
-  1%{color: green;}
-  100%{color: green;}
+  0%{
+    color: white;
+  }
+  100%{
+    color: green;
+  }
 }
 a{
   text-decoration: none;
