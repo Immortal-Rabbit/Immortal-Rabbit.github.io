@@ -9,7 +9,7 @@ body {
   color: white;
 }
 a:hover{
-  animation: animation1 3s;
+  animation: animation1 2s;
 }
 @keyframes animation1{
   0%{
