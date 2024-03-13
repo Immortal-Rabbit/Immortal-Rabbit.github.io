@@ -1,29 +1,59 @@
+* {
+    font-family: "Roboto";
+    margin: 0px;
+}
+
 body {
-  background-color: black;
-  width: screen-width;
-  color: white;
-  font-family: verdana;
-  text-align: center;
+    background-color: #151621;
+    color: #66ff00;
 }
-.active{
-  color: white;
+
+.u {
+    animation: animation1 3s infinite;
 }
-.headerlink:hover{
-  animation: animation1 2s;
+
+h1 {
+    float:left;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
 }
-@keyframes animation1{
-  0%{
+
+a {
+    color: #66ff00;
+    text-decoration: none;
+}
+
+.topnav a {
+    float: right;
+    padding-top: 25px;
+    text-align: center;
+    color: #66ff00;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.topnav a.active {
     color: white;
-  }
-  100%{
-    color: green;
-  }
 }
-.headerlink{
-  text-decoration: none;
-  color: white;
+
+.topnav a:hover {
+    color: white;
+    transition: 1s;
 }
-link1{
-  color: green;
-  text-decoration: none;
+
+header {
+    margin: 0px;
+    padding:10px
+}
+@keyframes animation1 {
+    0%{
+        color: green;
+    }50%{
+        color: yellow;
+    }100%{
+        color: green;
+    }
 }
