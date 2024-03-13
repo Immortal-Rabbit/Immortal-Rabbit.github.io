@@ -46,7 +46,7 @@ a {
 
 header {
     margin: 0px;
-    padding:100px
+    padding-bottom:100px
 }
 @keyframes animation1 {
     0%{
