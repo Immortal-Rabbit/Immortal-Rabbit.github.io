@@ -68,12 +68,13 @@ td {
 }
 
 table {
-	padding-top: 30px;
-	border-collapse: collapse;
-	position: absolute;
-	left: 50%;
-	margin-left: -155px;
-	top: 50px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin: 0;
+    padding: 30px;
+	    border-collapse: collapse;
 }
 
 table tr:first-child td {
