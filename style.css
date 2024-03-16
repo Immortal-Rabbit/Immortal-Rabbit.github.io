@@ -68,6 +68,7 @@ td {
 }
 
 table {
+	padding-top: 30px;
 	border-collapse: collapse;
 	position: absolute;
 	left: 50%;
