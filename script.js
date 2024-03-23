@@ -34,6 +34,8 @@ function turnClick(square) {
 
 function turn(squareId, player) {
 	origBoard[squareId] = player;
+	document.getElementById(index).style.color =
+			player == "X" ? "red" : "blue";
 	document.getElementById(squareId).innerText = player;
 	let gameWon = checkWin(origBoard, player)
 	if (gameWon) gameOver(gameWon)
@@ -82,7 +84,7 @@ function checkTie() {
 			cells[i].style.backgroundColor = "green";
 			cells[i].removeEventListener('click', turnClick, false);
 		}
-		declareWinner("Tie Game!")
+		declareWinner("Tie!")
 		return true;
 	}
 	return false;
