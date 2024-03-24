@@ -20,6 +20,12 @@ h1 {
     padding-bottom: 25px;
 }
 
+button{
+    background-color: #151621;
+    color: #66ff00;
+    margin: 10px;
+}
+
 a {
     color: #66ff00;
     text-decoration: none;
