@@ -49,9 +49,17 @@ function turnClick(square) {
 function turn(squareId, player) {
   origBoard[squareId] = player;
   document.getElementById(squareId).innerHTML = player;
+  
+  let textColor = (player === huPlayer) ? (huPlayer === 'X' ? 'red' : 'blue') : (aiPlayer === 'X' ? 'red' : 'blue');
+  
+  document.getElementById(squareId).style.color = textColor;
+
   let gameWon = checkWin(origBoard, player);
-  if (gameWon) gameOver(gameWon);
+  if (gameWon) {
+    gameOver(gameWon);
+  }
   checkTie();
+
 }
 
 function checkWin(board, player) {
@@ -69,7 +77,7 @@ function checkWin(board, player) {
 function gameOver(gameWon){
   for (let index of winCombos[gameWon.index]) {
     document.getElementById(index).style.backgroundColor = 
-      gameWon.player === huPlayer ? "blue" : "red";
+      gameWon.player === huPlayer ? "green" : "green";
   }
   for (let i=0; i < cells.length; i++) {
     cells[i].removeEventListener('click', turnClick, false);
@@ -95,7 +103,7 @@ function checkTie() {
       cell.style.backgroundColor = "green";
       cell.removeEventListener('click',turnClick, false);
     }
-    declareWinner("Tie game");
+    declareWinner("Tie!");
     return true;
   } 
   return false;
