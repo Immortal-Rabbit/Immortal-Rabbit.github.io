@@ -1,0 +1,3 @@
+"dependencies": {
+  "mongoose": "github:Automattic/mongoose"
+}
